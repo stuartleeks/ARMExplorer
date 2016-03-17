@@ -1513,7 +1513,14 @@ angular.module("armExplorer", ["ngRoute", "ngAnimate", "ngSanitize", "ui.bootstr
                     }
                 },
                 sortOrder: -1
-            }              
+            },
+            {
+                childDefinitionUrlSuffix: "providers/Microsoft.Web/connections/{name}", // Logic App connections
+                getLabel: (d: any, csmName: string) => d.properties.displayName + " (" + d.name + ")",
+                getSortKey: null,
+                getIconNameOverride: null,
+                sortOrder: -1
+            },        
         ];
     }
     function getTreeBranchProjection(childDefinition) : ITreeBranchDataOverrides {
