@@ -1,4 +1,127 @@
 [
+    /* Microsoft.Web/locations - this is manually added here as it isn't currently in the swagger (https://github.com/Azure/azure-rest-api-specs/blob/master/arm-web/2015-08-01/swagger/service.json) */
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/{name}",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    /* The next set of hard-coded locations is not ideal. Unfortunately the Microsoft.Web/locations doesn't seem to return a list */
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/East Asia/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/North Europe/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/West Europe/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/Southeast Asia/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/West US/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/East US/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/Japan West/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/Japan East/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/South Central US/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/East US 2/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/North Central US/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/Central US/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/Brazil South/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/Australia East/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/Australia Southeast/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/Central India/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/West India/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    {
+        "MethodName": "Get",
+        "HttpMethod": "GET",
+        "Url": "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Web/locations/South India/managedApis",
+        "ApiVersion": "2015-08-01-preview"
+    },
+    /* Microsoft.Web/connections - this is manually added here as it isn't currently in the swagger (https://github.com/Azure/azure-rest-api-specs/blob/master/arm-web/2015-08-01/swagger/service.json) */
     {
         "MethodName": "Get",
         "HttpMethod": "GET",
@@ -1557,7 +1680,7 @@
             "tags": {},
             "properties": {
                 "name": "Name of the hostingEnvironment (App Service Environment)",
-                "location": "Location of the hostingEnvironment (App Service Environment), e.g. \"West US\"",
+                "location": "Location of the hostingEnvironment (App Service Environment), e.g. \"West US",
                 "status": "Current status of the hostingEnvironment (App Service Environment)",
                 "vnetName": "Name of the hostingEnvironment's (App Service Environment) virtual network",
                 "vnetResourceGroupName": "Resource group of the hostingEnvironment's (App Service Environment) virtual network",
@@ -1569,7 +1692,7 @@
                     "subnet": "Subnet within the virtual network"
                 },
                 "internalLoadBalancingMode": "Specifies which endpoints to serve internally in the hostingEnvironment's (App Service Environment) VNET",
-                "multiSize": "Front-end VM size, e.g. \"Medium\", \"Large\"",
+                "multiSize": "Front-end VM size, e.g. \"Medium\", \"Large",
                 "multiRoleCount": "Number of front-end instances",
                 "workerPools": [
                     {
@@ -1597,8 +1720,8 @@
                     }
                 ],
                 "ipsslAddressCount": "Number of IP SSL addresses reserved for this hostingEnvironment (App Service Environment)",
-                "databaseEdition": "Edition of the metadata database for the hostingEnvironment (App Service Environment) e.g. \"Standard\"",
-                "databaseServiceObjective": "Service objective of the metadata database for the hostingEnvironment (App Service Environment) e.g. \"S0\"",
+                "databaseEdition": "Edition of the metadata database for the hostingEnvironment (App Service Environment) e.g. \"Standard",
+                "databaseServiceObjective": "Service objective of the metadata database for the hostingEnvironment (App Service Environment) e.g. \"S0",
                 "upgradeDomains": "Number of upgrade domains of this hostingEnvironment (App Service Environment)",
                 "subscriptionId": "Subscription of the hostingEnvironment (App Service Environment)",
                 "dnsSuffix": "DNS suffix of the hostingEnvironment (App Service Environment)",
@@ -2014,7 +2137,7 @@
             "tags": {},
             "properties": {
                 "name": "Name of the hostingEnvironment (App Service Environment)",
-                "location": "Location of the hostingEnvironment (App Service Environment), e.g. \"West US\"",
+                "location": "Location of the hostingEnvironment (App Service Environment), e.g. \"West US",
                 "status": "Current status of the hostingEnvironment (App Service Environment)",
                 "vnetName": "Name of the hostingEnvironment's (App Service Environment) virtual network",
                 "vnetResourceGroupName": "Resource group of the hostingEnvironment's (App Service Environment) virtual network",
@@ -2026,7 +2149,7 @@
                     "subnet": "Subnet within the virtual network"
                 },
                 "internalLoadBalancingMode": "Specifies which endpoints to serve internally in the hostingEnvironment's (App Service Environment) VNET",
-                "multiSize": "Front-end VM size, e.g. \"Medium\", \"Large\"",
+                "multiSize": "Front-end VM size, e.g. \"Medium\", \"Large",
                 "multiRoleCount": "Number of front-end instances",
                 "workerPools": [
                     {
@@ -2054,8 +2177,8 @@
                     }
                 ],
                 "ipsslAddressCount": "Number of IP SSL addresses reserved for this hostingEnvironment (App Service Environment)",
-                "databaseEdition": "Edition of the metadata database for the hostingEnvironment (App Service Environment) e.g. \"Standard\"",
-                "databaseServiceObjective": "Service objective of the metadata database for the hostingEnvironment (App Service Environment) e.g. \"S0\"",
+                "databaseEdition": "Edition of the metadata database for the hostingEnvironment (App Service Environment) e.g. \"Standard",
+                "databaseServiceObjective": "Service objective of the metadata database for the hostingEnvironment (App Service Environment) e.g. \"S0",
                 "upgradeDomains": "Number of upgrade domains of this hostingEnvironment (App Service Environment)",
                 "subscriptionId": "Subscription of the hostingEnvironment (App Service Environment)",
                 "dnsSuffix": "DNS suffix of the hostingEnvironment (App Service Environment)",
